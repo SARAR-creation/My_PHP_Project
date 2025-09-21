@@ -76,7 +76,7 @@
     calculateTotals();
   }
 
-  function goBack(){ window.location.href = 'previouspage.html'; }
+  function goBack(){ window.history.back(); }
 
   function calculateTotals(){
     let staffTotal = 0;
@@ -115,7 +115,9 @@
   }
 
   function goToApproved(role){
-    window.location.href = `IRMS_Approved_List.php?role=${encodeURIComponent(role)}`;
+    // Pass role to Approved List and include return page
+    const url = `IRMS_Approved_List.php?role=${encodeURIComponent(role)}&return=IRMS_Pro_Team_dashboard.php`;
+    window.location.href = url;
   }
 
   window.addEventListener('load', calculateTotals);

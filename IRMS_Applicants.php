@@ -11,7 +11,7 @@
 
 <header class="header"> 
   <div class="nav-buttons"> 
-    <a href="previouspage.html"><i class="fas fa-arrow-left"></i> Back</a> 
+    <a href="IRMS_Manager_dashboard.php"><i class="fas fa-arrow-left"></i> Back</a> 
   </div> 
   <h1>IR<span class="yellow">MS</span> Applicants</h1> 
 </header>
@@ -111,7 +111,7 @@ function updateCounts(){
   document.getElementById('approvedCount').innerText = applicants.filter(a=>a.status==="Approved").length;
 }
 
-let currentList = null; // track which list is being displayed
+let currentList = null;
 
 function showList(status){
   currentList = status;

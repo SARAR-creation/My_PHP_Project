@@ -142,7 +142,6 @@ $totalActive = $teamMembers + $deliveryMen;
     }
   }
 
-  // Render Products with Add More
   function renderProducts(products) {
     const contentBody = document.querySelector('.salary-details');
     contentBody.innerHTML = "";

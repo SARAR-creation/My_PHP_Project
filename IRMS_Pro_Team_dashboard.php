@@ -11,7 +11,7 @@
 
 <header class="header">
   <div class="nav-buttons">
-    <a href="#" id="backBtn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</a>
+    <a href="IRMS_Access_system.php" id="backBtn" onclick="goBack()"><i class="fas fa-arrow-left"></i> Back</a>
   </div>
   <h1>IR<span>MS</span> Pro. Team Dashboard</h1>
 </header>
